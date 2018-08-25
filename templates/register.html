@@ -1,0 +1,18 @@
+{% extends "register.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password"/>
+
+        <div class="form-group">  <!--Confirmation of the User's password-->
+            <input class="form-control" name="confirmation" placeholder="confirmation" type="password"/>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Register</button> <!--Button that user can click to register-->
+    </form>
+{% endblock %}
